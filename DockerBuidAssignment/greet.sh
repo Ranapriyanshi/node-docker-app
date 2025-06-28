@@ -1,0 +1,1 @@
+echo "Welcome to Priyanshi's Docker Build Assignment!"
