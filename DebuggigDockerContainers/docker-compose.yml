@@ -1,16 +1,12 @@
 version: "3.9"
-
 services:
   web:
     image: nginx:latest
     ports:
       - "8080:80"
-    depends_on:
-      - db
-
   db:
     image: postgres:13
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: passwor
-      POSTGRES_DB: mydatabase
+      POSTGRES_DB: example
+      POSTGRES_USER: example
+      # Oops! We forgot POSTGRES_PASSWORD on purpose.
